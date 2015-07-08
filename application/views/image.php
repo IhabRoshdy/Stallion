@@ -1,0 +1,1 @@
+<img class="decoration" alt="Custom Bg" src="<?php echo base_url();?>images/custom-bg.jpg">

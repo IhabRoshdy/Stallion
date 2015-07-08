@@ -1,0 +1,37 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.txtArea_address, .txtArea_athBg{
+	width: 300px;
+	height: 100px;
+}
+.txtBox_age{
+	width: 30px;
+}
+.error{
+	color: red;
+}
+.divLeft{
+	width: 25%;
+	float: left;
+}
+.divRight{
+	width: 25%;
+	float: right;
+}
+.divCenter{
+	width: 50%;
+	float: left;
+}
+.tblArabic{
+	width: 100%;
+	text-align: right;
+}
+.tblEnglish{
+	width: 100%;
+}
+.tblControls{
+	text-align: center;
+	width: 100%;
+}

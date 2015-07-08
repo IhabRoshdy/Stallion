@@ -1,0 +1,13 @@
+Registration:
+
+	vendor_guest_list
+
+Reservation:
+
+	reservations
+	reservationsDetails_event
+
+Checkin:
+
+	Update reservations, set status to 4 [Attended]
+	Insert RFID into serialNumber column
