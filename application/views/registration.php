@@ -11,6 +11,8 @@
 		<div class="page-content singlepage">
 			<div class="item-content">
 				<?php echo validation_errors('<div class="error">','</div>'); ?>
+				<div class="error"><?php echo $errorMessage; ?></div>
+				<br/>
 				<?=form_open('registration/register')?>
 					<div class="divLeft">
 						<table border="0" cellspacing="0" cellpadding="5" class="tblEnglish">
@@ -63,22 +65,22 @@
 							</tr>
 							<tr>
 								<td>
-									<input type="text" name="name" size="25" value="<?= isset($_POST['name']) ? $_POST['name'] : '' ?>"/>
+									<input type="text" name="name" size="25" value="<?= isset($_POST['name']) ? $_POST['name'] : '' ?>"/>&nbsp;<span class="spanRequired">*</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<input type="text" name="age" class="txtBox_age" value="<?= isset($_POST['age']) ? $_POST['age'] : '' ?>"/>
+									<input type="text" name="age" class="txtBox_age" value="<?= isset($_POST['age']) ? $_POST['age'] : '' ?>"/>&nbsp;<span class="spanRequired">*</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<input type="text" name="mobileNumber" size="25" value="<?= isset($_POST['mobileNumber']) ? $_POST['mobileNumber'] : '' ?>"/>
+									<input type="text" name="mobileNumber" size="25" value="<?= isset($_POST['mobileNumber']) ? $_POST['mobileNumber'] : '' ?>"/>&nbsp;<span class="spanRequired">*</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<input type="text" name="email" size="25" value="<?= isset($_POST['email']) ? $_POST['email'] : '' ?>"/>
+									<input type="text" name="email" size="25" value="<?= isset($_POST['email']) ? $_POST['email'] : '' ?>"/>&nbsp;&nbsp;
 								</td>
 							</tr>
 							<tr>
@@ -101,7 +103,7 @@
 										'checked'=>isset($_POST['disclaimer']) ? $_POST['disclaimer'] : 0,
 										'style'=>'margin-bottom:5px;margin-right:5px;'
 										);
-									echo form_checkbox($data);
+									echo "&nbsp;<span class='spanRequired'>*&nbsp;</span>".form_checkbox($data);
 									?>
 									I certify that I am physically fit to participate in all the activities of URBAN RACE EGYPT. I am not aware of any health problems and or symptoms that might suggest inability to participate in the activities and I bear all the responsibility to manage it when it comes to my knowledge
 									<br/><br/>
@@ -123,6 +125,14 @@
 						</table>
 					</div>
 					<div class="divRight">
+						<table border="0" cellspacing="0" cellpadding="0" class="tblArabic">
+							<tr>
+								<td class="tdRequired">
+									*&nbsp;Required
+								</td>
+							</tr>
+						</table>
+						<!--
 						<table border="0" cellpadding="5" cellspacing="0" class="tblArabic">
 							<tr>
 								<td height="40px">
@@ -160,6 +170,7 @@
 								</td>
 							</tr>
 						</table>
+						-->
 					</div>
 				<?=form_close()?>
 			</div>

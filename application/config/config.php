@@ -4,8 +4,8 @@
 SMS CONFIG
 */
 $config['sms-user']	= "noordev";
-$config['sms-password']	= "ZOCEcTEOJPdRdE";
-$config['sms-api-id']	= "3516736";
+$config['sms-password']	= "n00rapi";
+$config['sms-api-id']	= "3551674";
 $config['sms-baseurl']	= "http://api.clickatell.com";
 
 /*

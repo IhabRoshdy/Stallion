@@ -7,7 +7,7 @@ body{
 	height: 100px;
 }
 .txtBox_age{
-	width: 30px;
+	width: 50px;
 }
 .error{
 	color: red;
@@ -23,6 +23,7 @@ body{
 .divCenter{
 	width: 50%;
 	float: left;
+	margin-bottom: 30px;
 }
 .tblArabic{
 	width: 100%;
@@ -34,4 +35,18 @@ body{
 .tblControls{
 	text-align: center;
 	width: 100%;
+}
+.divRight table tr td{
+	text-align: right !important;
+	color: red;
+	font-size: 10px;
+	font-style: italic;
+}
+.divCenter table tr td{
+	text-align: center !important;
+}
+.spanRequired{
+	color: red;
+	margin: 0px !important;
+	float: none !important;
 }

@@ -1,8 +1,14 @@
 <?php
 
 function send_sms_registration($mobile_number, $id){
-
-    //$mobile_number = '2'.$mobile_number;
+    $RECEPIENT = $mobile_number;
+    $MSG = $id;
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "http://192.168.0.190:13013/cgi-bin/sendsms?myid=7779997&smsc=NOOR_NSP&username=test&password=test&charset=utf-8&coding=2&to=$RECEPIENT&text=$MSG&dlr-mask=31&dlr-url=http://localhost/dlr.php?smscID=%i&dlr=%d&answer=%A&to=%p&from=%P&ts=%T&smsID=7779997&charset=%C&kannel_id=%I");
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_exec($ch);
+    curl_close($ch);
+    /*
     $mobile_number = '2'.$mobile_number;
     
     $CI = & get_instance();
@@ -11,8 +17,8 @@ function send_sms_registration($mobile_number, $id){
     $api_id=$CI->config->item('sms-api-id');
     $baseurl=$CI->config->item('sms-baseurl');
     
-    //$text = urlencode('alah om any sa2em');
-    $text = 'Your serial at the race is '.$id;
+    $text = urlencode('Your serial at the race is '.$id);
+    //$text = 'HELLO!';
  
     // auth call
     $url = "$baseurl/http/auth?user=$user&password=$password&api_id=$api_id";
@@ -43,6 +49,7 @@ function send_sms_registration($mobile_number, $id){
        
         //echo "Authentication failure: ". $ret[0];
     }
+    */
  }
 
 ?>

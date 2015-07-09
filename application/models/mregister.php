@@ -5,6 +5,9 @@
 	class MRegister extends CI_Model
 	{
 		function register(){
+
+			$this->db->trans_begin();
+
 			$data = array(
 				'vendor_id'=>2,
 				'name'=>$_POST['name'],
@@ -46,6 +49,14 @@
 				'update_time'=>time());
 
 			$this->db->insert('reservationsDetails_event', $data);
+
+			if ($this->db->trans_status() === FALSE){
+				$this->db->trans_rollback();
+				return 0;
+			}
+			else{
+				$this->db->trans_commit();
+			}
 
 			return $registeredId;
 		}

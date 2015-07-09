@@ -22,11 +22,10 @@
 					<div class="container_12">
 						<div class="grid_6 branding">
 							<div id="logo" class="logo fleft">
-								<img width="60" height="60" alt="Logo" src="<?php echo base_url();?>images/logo.png">
+								<img width="60" height="60" alt="Logo" src="<?php echo base_url();?>images/UR-Brown Icon.png">
 							</div>
 							<div class="fleft">
-								<h1 id="site-title"><a href="index.html" title="FitnessLife" rel="home">Fitness Life</a></h1>
-								<h2 id="site-description">Health and Fitness Center</h2>
+								<h1 id="site-title"><a href="index.html" title="FitnessLife" rel="home">Urban Race</a></h1>
 							</div>
 						</div>
 						<div class="grid_6 no-m-t lang">
@@ -39,7 +38,6 @@
 								</li>
 							</ul>
 							<div class="clear"></div>
-							<div class="callus"><a href="tel:+1 (514) 000-000">Call Us: +1 (514) 000-000</a></div>
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -47,35 +45,32 @@
 						<div class="container_12">
 							<nav class="site-navigation main-navigation" role="navigation">
 								<ul class="menu">
-									<li><a href="index.html" title="Home">Home</a></li>
-									<li><a href="classes-list.html" title="Classes">Classes</a>
+									<li>
+										<?php echo anchor('home/index', 'Learn More'); ?>
 										<ul class="sub-menu">
-											<li class="menu-item"><a href="classes-grid.html" title="Classes Grid">Classes Grid</a></li>
-											<li class="menu-item"><a href="classes-single.html" title="Classes Single">Classes Single</a></li>
+											<li class="menu-item">
+												<?php echo anchor('whatIsUrbanRace/index', 'What is Urban Race?'); ?>
+											</li>
+											<li class="menu-item">
+												<a href="#" title="Classes Single">Obstacles</a>
+											</li>
+											<li class="menu-item">
+												<a href="#" title="Classes Single">Press</a>
+											</li>
+											<li class="menu-item">
+												<a href="#" title="Classes Single">Television Coverage</a>
+											</li>
 										</ul>
 									</li>
-									<li><a href="trainer-list.html" title="Trainers">Trainers</a>
+									<li>
+										<a href="#" title="Trainers">Urban Race Events</a>
 										<ul class="sub-menu">
-											<li class="menu-item"><a href="trainer-single.html" title="Trainer single">Trainers singe</a></li>
+											<li class="menu-item"><a href="#" title="Trainer single">Urban Race 2014</a></li>
 										</ul>
 									</li>
-									<li><a href="membership.html" title="Membership">Membership</a></li>
-									<li><a href="news-list.html" title="News">News</a>
-										<ul class="sub-menu">
-											<li class="menu-item"><a href="news-grid.html" title="News Grid">News Grid</a></li>
-											<li class="menu-item"><a href="news-single.html" title="Single News">Single News</a></li>
-										</ul>
+									<li>
+										<?php echo anchor('registration/index', 'Register'); ?>
 									</li>
-									<li><a href="page-about-us.html" title="Pages">Pages</a>
-										<ul class="sub-menu">
-											<li class="menu-item"><a href="page-about-us.html" title="Single News">About Us</a></li>
-											<li class="menu-item"><a href="page-full-width.html" title="News Grid">Page Full Width</a></li>
-											<li class="menu-item"><a href="page-404.html" title="Single News">404 error Page</a></li>
-											<li class="menu-item"><a href="https://wplook.com/theme/fitnesslife" title="Buy me">Buy Me</a></li>
-										</ul>
-									</li>
-									<li><a href="page-contact-us.html" title="Contact">Contact</a></li>
-									<li><a href="https://wplook.com/theme/fitnesslife/?utm_source=Menu-URL-HTML&amp;utm_medium=link&amp;utm_campaign=FitnessLife" title="Fitness WordPress Theme">WordPress Theme</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -92,13 +87,9 @@
 				<div class="container_12">
 					<nav class="grid_12 no-m-b footer-navigation">
 						<ul>
-							<li><a href="index.html" title="Home">Home</a></li>
-							<li><a href="classes-list.html" title="Classes">Classes</a></li>
-							<li><a href="trainer-list.html" title="Trainers">Trainers</a></li>
-							<li><a href="membership.html" title="Membership">Membership</a></li>
-							<li><a href="news-grid.html" title="News">News</a></li>
-							<li><a href="page-about-us.html" title="Services">Pages</a></li>
-							<li><a href="page-contact-us.html" title="Contact">Contact</a></li><li><a href="https://wplook.com/theme/fitnesslife/?utm_source=Menu-URL-HTML&amp;utm_medium=link&amp;utm_campaign=FitnessLife" title="Fitness WordPress Theme">WordPress Theme</a></li>
+							<li><?php echo anchor('home/index', 'Learn More'); ?></li>
+							<li><a href="#" title="Trainers">Urban Race Events</a></li>
+							<li><?php echo anchor('registration/index', 'Register'); ?></li>
 						</ul>
 					</nav>
 					<div class="clear"></div>
