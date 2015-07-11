@@ -202,7 +202,7 @@ input[type="email"], input[type="text"] {
 #contact-form {
     margin: 20px 0;
 }
-#contact-form #submit {
+#submit {
     background: #f65e13 none repeat scroll 0 0;
     border: 0 none;
     border-radius: 2px;
@@ -688,7 +688,7 @@ a.meanmenu-reveal {
     line-height: 48px;
 }
 .list .item-image::before, .single .item-image::before {
-    background-color: #f65e13;
+    /*background-color: #f65e13;*/
     background-image: url("images/pattern.png");
     bottom: -200px;
     content: " ";
@@ -721,7 +721,7 @@ a.meanmenu-reveal {
     width: 0;
 }
 .list .item-image::after, .single .item-image::after {
-    background-color: #f65e13;
+    /*background-color: #f65e13;*/
     background-image: url("images/pattern.png");
     content: " ";
     height: 400px;
@@ -1059,7 +1059,7 @@ img.alignright {
     z-index: 50;
 }
 .item .overlay {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.7);
     bottom: 0;
     display: block;
     height: 0;

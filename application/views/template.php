@@ -14,6 +14,9 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/grid.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/flexslider.css">
+
+		<link rel="shortcut icon" href="<?php echo base_url(); ?>images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="<?php echo base_url(); ?>images/favicon.ico" type="image/x-icon">
 	</head>
 	<body class="home">
 		<div id="page" class="hfeed site">
@@ -25,7 +28,9 @@
 								<img width="60" height="60" alt="Logo" src="<?php echo base_url();?>images/UR-Brown Icon.png">
 							</div>
 							<div class="fleft">
-								<h1 id="site-title"><a href="index.html" title="FitnessLife" rel="home">Urban Race</a></h1>
+								<h1 id="site-title">
+									<?php echo anchor('home/index', 'Urban Race'); ?>
+								</h1>
 							</div>
 						</div>
 						<div class="grid_6 no-m-t lang">
@@ -52,20 +57,22 @@
 												<?php echo anchor('whatIsUrbanRace/index', 'What is Urban Race?'); ?>
 											</li>
 											<li class="menu-item">
-												<a href="#" title="Classes Single">Obstacles</a>
+												<?php echo anchor('obstacles/index', 'Obstacles'); ?>
 											</li>
 											<li class="menu-item">
-												<a href="#" title="Classes Single">Press</a>
+												<?php echo anchor('press/index', 'Press'); ?>
 											</li>
 											<li class="menu-item">
-												<a href="#" title="Classes Single">Television Coverage</a>
+												<?php echo anchor('tvCoverage/index', 'Television Coverage'); ?>
 											</li>
 										</ul>
 									</li>
 									<li>
-										<a href="#" title="Trainers">Urban Race Events</a>
+										<?php echo anchor('urbanRace2014/index', 'Urban Race Events'); ?>
 										<ul class="sub-menu">
-											<li class="menu-item"><a href="#" title="Trainer single">Urban Race 2014</a></li>
+											<li class="menu-item">
+												<?php echo anchor('urbanRace2014/index', 'Urban Race 2014'); ?>
+											</li>
 										</ul>
 									</li>
 									<li>
@@ -88,7 +95,7 @@
 					<nav class="grid_12 no-m-b footer-navigation">
 						<ul>
 							<li><?php echo anchor('home/index', 'Learn More'); ?></li>
-							<li><a href="#" title="Trainers">Urban Race Events</a></li>
+							<li><?php echo anchor('urbanRace2014/index', 'Urban Race Events'); ?></li>
 							<li><?php echo anchor('registration/index', 'Register'); ?></li>
 						</ul>
 					</nav>

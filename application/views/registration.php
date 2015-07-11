@@ -10,6 +10,8 @@
 		</div>
 		<div class="page-content singlepage">
 			<div class="item-content">
+				<h2>Urban Race 2015 Registration Form</h2>
+				<br/>
 				<?php echo validation_errors('<div class="error">','</div>'); ?>
 				<div class="error"><?php echo $errorMessage; ?></div>
 				<br/>
@@ -118,7 +120,7 @@
 							<tr>
 								<td>
 									<?php
-									echo form_submit('submit', 'Register');
+									echo form_submit('submit', 'Register', "id='submit'");
 									?>
 								</td>
 							</tr>

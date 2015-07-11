@@ -11,6 +11,8 @@ body{
 }
 .error{
 	color: red;
+	font-style: italic;
+	font-size: 14px;
 }
 .divLeft{
 	width: 25%;
@@ -50,3 +52,12 @@ body{
 	margin: 0px !important;
 	float: none !important;
 }
+.innerLink{
+	color: #494f5c;
+	font-size: 12px;
+}
+	article h3{
+		margin-left: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}

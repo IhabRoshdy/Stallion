@@ -9,6 +9,7 @@ function send_sms_registration($mobile_number, $id){
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_exec($ch);
     curl_close($ch);
+
     /*
     $mobile_number = '2'.$mobile_number;
     
@@ -18,7 +19,7 @@ function send_sms_registration($mobile_number, $id){
     $api_id=$CI->config->item('sms-api-id');
     $baseurl=$CI->config->item('sms-baseurl');
     
-    $text = urlencode('Your serial at the race is '.$id);
+    $text = urlencode('Your_serial_at_the_race_is_:'.$id);
     //$text = 'HELLO!';
  
     // auth call

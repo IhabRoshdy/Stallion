@@ -26,7 +26,7 @@
 			Urban Race Egypt was founded by Stallions- an Egyptian fitness company that was the first to introduce and adopt Sports Performance Training methodology in Egypt.
 		</div>
 	</aside>
-	<aside class="widget purple news grid">
+	<aside class="widget news grid">
 		<div class="widget-header">
 			<h3 class="title">Obstacles</h3>
 		</div>
@@ -35,9 +35,9 @@
 				<div class="item-image">
 					<img alt="Image" src="<?php echo base_url(); ?>images/Obstacle 3.jpg">
 				</div>
-				<a class="item-title" href="#">
-					<h3>Obstacles</h3>
-				</a>
+				<h3>
+					<?php echo anchor('obstacles/index', 'Obstacles'); ?>
+				</h3>
 				<p>
 					Race Obstacles are designed to test athletes’ strength, endurance and speed. Obstacles included wire crawls, rope climbs and others.
 				</p>
