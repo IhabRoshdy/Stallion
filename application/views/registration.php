@@ -3,6 +3,12 @@
 		$('.date').datepicker();
 	});
 </script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<style type="text/css">
+	.g-recaptcha div div{
+		width: 100% !important;
+	}
+</style>
 <div class="grid_12 no-m-b">
 	<article class="single page">
 		<div class="page-header">
@@ -110,6 +116,17 @@
 									I certify that I am physically fit to participate in all the activities of URBAN RACE EGYPT. I am not aware of any health problems and or symptoms that might suggest inability to participate in the activities and I bear all the responsibility to manage it when it comes to my knowledge
 									<br/><br/>
 									أقر أنا بأني مؤهل بدنيا للمشاركة في جميع أنشطة أوربان ريس مصر. وأني لا أعاني من أي أمراض أو مشاكل صحية تعيقني عن الإشتراك في الأنشطة وأني أتحمل المسئولية كاملة في حالة ظهور أي مرض أو مشكلة صحية
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<!--<div class="g-recaptcha" data-sitekey="6LePqwkTAAAAANjNFHhHyzOEaFh190T3x_afqtWK"></div>-->
+									<div class="g-recaptcha" data-sitekey="6Lf6rwkTAAAAAN9dLOECdAr4Zmeq9qdOyMqFYJOe"></div>
 								</td>
 							</tr>
 							<tr>

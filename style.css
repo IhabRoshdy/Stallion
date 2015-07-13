@@ -70,7 +70,7 @@ body, input, textarea {
 }
 .fleft {
     float: left;
-    margin: 10px auto 0;
+    margin: 20px auto 0;
 }
 .right, div.right, a.right {
     float: right;

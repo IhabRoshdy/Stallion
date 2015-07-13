@@ -4,8 +4,8 @@
 SMS CONFIG
 */
 $config['sms-user']	= "noordev";
-$config['sms-password']	= "n00rapi";
-$config['sms-api-id']	= "3551674";
+$config['sms-password']	= "ZOCEcTEOJPdRdE";
+$config['sms-api-id']	= "3516736";
 $config['sms-baseurl']	= "http://api.clickatell.com";
 
 /*
@@ -24,7 +24,7 @@ $config['sms-baseurl']	= "http://api.clickatell.com";
 | environments.
 |
 */
-$config['base_url'] = 'http://stallions.local/';
+$config['base_url'] = 'http://urban-race.com/'; //http://stallions.local/ //http://urban-race.com/
 
 /*
 |--------------------------------------------------------------------------
@@ -234,7 +234,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'stallionurbanrace';
 
 /*
 |--------------------------------------------------------------------------

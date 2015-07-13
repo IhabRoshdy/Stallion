@@ -1,0 +1,23 @@
+CPanel:
+
+URL: https://cpanel.noorhosting.com:2083/cpsess6609524529/frontend/x3/index.html
+Username: urbanadmin
+Password: Ur857h;
+
+FTP:
+
+URL: chrome://fireftp/content/fireftp.xul
+Username: ihab@urban-race.com
+Password: n00r123;
+
+Database:
+
+Name: urbanadm_zabatnee
+Username: urbanadm_root
+Password: n00rdev
+Host: localhost
+
+SMS:
+
+Real IP: 217.139.224.229
+Local IP: 192.168.0.190

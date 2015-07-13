@@ -30,15 +30,32 @@ class Registration extends CI_Controller
 				$this->loadRegistrationView();
 			}
 			else{
-				$registeredId = $this->MRegister->register();
-				if($registeredId == 0){
-					$this->loadRegistrationView('Registration error, please try again');
-				}
-				else{
-					$this->load->helper('sms_helper');
-					send_sms_registration($_POST['mobileNumber'], $registeredId);
-					redirect('/successRegistration/index/'.$registeredId);
-				}
+				$recaptcha=$_POST['g-recaptcha-response'];
+				//if(!empty($recaptcha)){
+					include("getCurlData.php");
+					$google_url="https://www.google.com/recaptcha/api/siteverify";
+					//$secret='6LePqwkTAAAAANm2erQf3znN96t3KC9fkfhcBgx7';
+					$secret='6Lf6rwkTAAAAAM5J8GJ_dxuHOl8LPLHvNmiRQpTZ';
+					$ip=$_SERVER['REMOTE_ADDR'];
+					$url=$google_url."?secret=".$secret."&response=".$recaptcha."&remoteip=".$ip;
+					$res=getCurlData($url);
+					$res= json_decode($res, true);
+					//reCaptcha success check 
+					if($res['success']){
+						$registeredId = $this->MRegister->register();
+						if($registeredId == 0){
+							$this->loadRegistrationView('Registration error, please try again');
+						}
+						else{
+							$this->load->helper('sms_helper');
+							send_sms_registration($_POST['mobileNumber'], $registeredId);
+							redirect('/successRegistration/index/'.$registeredId);
+						}
+					}
+					else{
+						$this->loadRegistrationView('Registration error, You must check Captcha');
+					}
+				//}
 			}
 		}
 		catch(Exception $e){
@@ -55,5 +72,15 @@ class Registration extends CI_Controller
 			return false;
 		}
 	}
+	function check_captcha($str){
+	    $word = $this->session->userdata('captchaWord');
+	    if(strcmp(strtoupper($str),strtoupper($word)) == 0){
+	      return true;
+	    }
+	    else{
+	      $this->form_validation->set_message('check_captcha', 'Please enter correct words!');
+	      return false;
+	    }
+  	}
 }
 ?>

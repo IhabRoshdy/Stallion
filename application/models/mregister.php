@@ -58,7 +58,7 @@
 				$this->db->trans_commit();
 			}
 
-			return $registeredId;
+			return $redervationId;
 		}
 	}
 ?>

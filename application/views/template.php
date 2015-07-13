@@ -25,7 +25,7 @@
 					<div class="container_12">
 						<div class="grid_6 branding">
 							<div id="logo" class="logo fleft">
-								<img width="60" height="60" alt="Logo" src="<?php echo base_url();?>images/UR-Brown Icon.png">
+								<img width="80" height="80" alt="Logo" src="<?php echo base_url();?>images/UR-Brown Icon_8080.png">
 							</div>
 							<div class="fleft">
 								<h1 id="site-title">
@@ -97,6 +97,16 @@
 							<li><?php echo anchor('home/index', 'Learn More'); ?></li>
 							<li><?php echo anchor('urbanRace2014/index', 'Urban Race Events'); ?></li>
 							<li><?php echo anchor('registration/index', 'Register'); ?></li>
+							<li style="float:right;">
+								<a href="https://www.facebook.com/UrbanRaceEgypt" target="_blank">
+									<img src="<?php echo base_url(); ?>images/facebookLogo.png" width="30" height="30">
+								</a>
+							</li>
+							<li style="float:right;">
+								<a href="https://instagram.com/urbanraceegypt/" target="_blank">
+									<img src="<?php echo base_url(); ?>images/instaLogo.gif" width="30" height="30">
+								</a>
+							</li>
 						</ul>
 					</nav>
 					<div class="clear"></div>

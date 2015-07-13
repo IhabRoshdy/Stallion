@@ -33,11 +33,9 @@
 			<h1 class="title">Urban Race 2014</h1>
 		</div>
 		<div class="page-content singlepage">
-			<!--
 			<div class="item-image-page">
-				<img alt="Image" src="<?php echo base_url();?>images/What's Urban Race_Inner.jpg">
+				<img alt="Image" src="<?php echo base_url();?>images/Urban Race Event (760 X 380).jpg">
 			</div>
-			-->
 			<div class="item-content">
 				<h2>Urban Race 2014</h2>
 				<br/>

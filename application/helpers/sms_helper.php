@@ -1,15 +1,17 @@
 <?php
 
 function send_sms_registration($mobile_number, $id){
-
+    
     $RECEPIENT = $mobile_number;
-    $MSG = 'Urban_Race_Id_:'.$id;
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://192.168.0.190:13013/cgi-bin/sendsms?myid=7779997&smsc=NOOR_NSP&username=test&password=test&charset=utf-8&coding=2&to=$RECEPIENT&text=$MSG&dlr-mask=31&dlr-url=http://localhost/dlr.php?smscID=%i&dlr=%d&answer=%A&to=%p&from=%P&ts=%T&smsID=7779997&charset=%C&kannel_id=%I");
+    $MSG = 'Your%20Urban%20Race%20Id%20is%20:'.$id;
+    $ch = curl_init(); //192.168.0.190 //217.139.224.229
+    curl_setopt($ch, CURLOPT_URL, "http://217.139.224.229:13013/cgi-bin/sendsms?myid=7779997&smsc=NOOR_NSP&username=test&password=test&charset=utf-8&coding=2&to=$RECEPIENT&text=$MSG&dlr-mask=31&dlr-url=http://localhost/dlr.php?smscID=%i&dlr=%d&answer=%A&to=%p&from=%P&ts=%T&smsID=7779997&charset=%C&kannel_id=%I");
     curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     curl_exec($ch);
     curl_close($ch);
-
+    
+    
     /*
     $mobile_number = '2'.$mobile_number;
     
@@ -19,8 +21,8 @@ function send_sms_registration($mobile_number, $id){
     $api_id=$CI->config->item('sms-api-id');
     $baseurl=$CI->config->item('sms-baseurl');
     
-    $text = urlencode('Your_serial_at_the_race_is_:'.$id);
-    //$text = 'HELLO!';
+    //$text = urlencode('Your Urban Race Id is :'.$id);
+    $text = urlencode('hello!'.$id);
  
     // auth call
     $url = "$baseurl/http/auth?user=$user&password=$password&api_id=$api_id";
@@ -34,7 +36,7 @@ function send_sms_registration($mobile_number, $id){
     if ($sess[0] == "OK") {
  
         $sess_id = trim($sess[1]); // remove any whitespace
-        $url = "$baseurl/http/sendmsg?session_id=$sess_id&to=$mobile_number&text=$text";
+        $url = "$baseurl/http/sendmsg?session_id=$sess_id&to=$mobile_number&text=$text&from=201001644191";
         // do sendmsg call
         $ret = file($url);
         $send = explode(":",$ret[0]);
@@ -50,8 +52,7 @@ function send_sms_registration($mobile_number, $id){
         return FALSE;
        
         //echo "Authentication failure: ". $ret[0];
-    }
-    */
+    }*/
  }
 
 ?>

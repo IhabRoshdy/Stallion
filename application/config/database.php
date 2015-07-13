@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '30091986';
-$db['default']['database'] = 'zabatnee';
+$db['default']['username'] = 'urbanadm_root'; //root //urbanadm_root
+$db['default']['password'] = 'n00rdev;'; //30091986 //n00rdev;
+$db['default']['database'] = 'urbanadm_zabatnee'; //zabatnee //urbanadm_zabatnee
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
