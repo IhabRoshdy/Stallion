@@ -109,7 +109,8 @@
 			<h3 class="title">Urban Race 2015</h3>
 		</div>
 		<div class="textwidget">
-			Urban race 2015 is taking place at Marassi on 28th of August. Get ready and <?php echo anchor('registration/index', 'REGISTER'); ?> now.
+			Urban Race is coming to Marassi once again on the 29th of August!<br/><br/>More obstacles, tougher challenges and a whole lot more fun await you, so you better come stronger and faster than ever! 
+			<br/><br/>Get Ready & <?php echo anchor('registration/index', 'REGISTER'); ?> now.
 		</div>
 	</aside>
 </div>

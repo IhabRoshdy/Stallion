@@ -24,7 +24,7 @@ $config['sms-baseurl']	= "http://api.clickatell.com";
 | environments.
 |
 */
-$config['base_url'] = 'http://urban-race.com/'; //http://stallions.local/ //http://urban-race.com/
+$config['base_url'] = 'http://stallions.local/'; //http://stallions.local/ //http://urban-race.com/
 
 /*
 |--------------------------------------------------------------------------

@@ -60,5 +60,17 @@
 
 			return $redervationId;
 		}
+
+		function getAllRegistered($limit, $start){
+			$query = 'SELECT r.id, gt.name, gt.mobile, gt.age FROM vendor_guest_list gt inner join reservations r on r.mobile = gt.mobile LIMIT '.$limit.' OFFSET '.$start.';';
+			$result = $this->db->query($query);
+			return $result->result_array();
+		}
+
+		function getAllRegisteredCount(){
+			$query = 'SELECT r.id, gt.name, gt.mobile, gt.age FROM vendor_guest_list gt inner join reservations r on r.mobile = gt.mobile;';
+			$result = $this->db->query($query);
+			return $result->num_rows();
+		}
 	}
 ?>

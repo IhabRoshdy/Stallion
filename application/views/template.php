@@ -25,13 +25,17 @@
 					<div class="container_12">
 						<div class="grid_6 branding">
 							<div id="logo" class="logo fleft">
-								<img width="80" height="80" alt="Logo" src="<?php echo base_url();?>images/UR-Brown Icon_8080.png">
+								<a href="<?php echo site_url('home/index'); ?>">
+									<img width="80" height="80" alt="Logo" src="<?php echo base_url();?>images/logo_withText.png">
+								</a>
 							</div>
+							<!--
 							<div class="fleft">
 								<h1 id="site-title">
 									<?php echo anchor('home/index', 'Urban Race'); ?>
 								</h1>
 							</div>
+							-->
 						</div>
 						<div class="grid_6 no-m-t lang">
 							<ul class="language-menu right">
@@ -114,7 +118,7 @@
 				<div class="site-info">
 					<div class="container_12">
 					<div class="grid_6">
-						<span class="theme-copyrights">Copyright &copy; 2013. All Rights reserved.</span>
+						<span class="theme-copyrights">Copyright &copy; <?php echo date("Y"); ?>. All Rights reserved.</span>
 					</div>
 					<div class="clear"></div>
 				</div>
