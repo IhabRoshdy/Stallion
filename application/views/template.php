@@ -26,7 +26,7 @@
 						<div class="grid_6 branding">
 							<div id="logo" class="logo fleft">
 								<a href="<?php echo site_url('home/index'); ?>">
-									<img width="80" height="80" alt="Logo" src="<?php echo base_url();?>images/logo_withText.png">
+									<img width="230" height="115" alt="Logo" src="<?php echo base_url();?>images/logo.png">
 								</a>
 							</div>
 							<!--
