@@ -23,6 +23,10 @@ class Registration extends CI_Controller
 			$this->form_validation->set_rules('name', 'Name', 'required|xss_clean|trim');
 			$this->form_validation->set_rules('age', 'Age', 'required|numeric|xss_clean|trim');
 			$this->form_validation->set_rules('mobileNumber', 'Mobile Number', 'required|numeric|max_length[11]|exact_length[11]|min_length[11]|is_unique[vendor_guest_list.mobile]|xss_clean|trim');
+			/*
+			custom call_back with preg_match
+			replace any character but numbers by empty before inserting into database
+			*/
 			$this->form_validation->set_rules('email', 'Email', 'valid_email|valid_emails|xss_clean|trim');
 			$this->form_validation->set_rules('disclaimer', 'Disclaimer', 'callback_disclaimer_check');
 
