@@ -83,7 +83,7 @@
 							</tr>
 							<tr>
 								<td>
-									<input type="text" name="mobileNumber" size="25" value="<?= isset($_POST['mobileNumber']) ? $_POST['mobileNumber'] : '' ?>"/>&nbsp;<span class="spanRequired">*</span>
+									<input type="text" name="mobileNumber" size="25" value="<?= isset($_POST['mobileNumber']) ? $_POST['mobileNumber'] : '' ?>" style="margin-left:90px;"/>&nbsp;<span class="spanRequired">*</span>&nbsp;<span class="mobileHint">no spaces allowed</span>
 								</td>
 							</tr>
 							<tr>

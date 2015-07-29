@@ -3,7 +3,7 @@
 function send_sms_registration($mobile_number, $id){
     
     $RECEPIENT = $mobile_number;
-    $MSG = 'Your%20Urban%20Race%20Id%20is%20:'.$id;
+    $MSG = 'Urban%20Race%20Id%20:'.$id.'%20Tickets%20are%20at%20Ticketsmarche.com%20or%20call%2016826.';
     $ch = curl_init(); //192.168.0.190 //217.139.224.229
     curl_setopt($ch, CURLOPT_URL, "http://217.139.224.229:13013/cgi-bin/sendsms?myid=7779997&smsc=NOOR_NSP&username=test&password=test&charset=utf-8&coding=2&to=$RECEPIENT&text=$MSG&dlr-mask=31&dlr-url=http://localhost/dlr.php?smscID=%i&dlr=%d&answer=%A&to=%p&from=%P&ts=%T&smsID=7779997&charset=%C&kannel_id=%I");
     curl_setopt($ch, CURLOPT_HEADER, 0);
